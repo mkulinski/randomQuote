@@ -1,0 +1,12 @@
+html, body {
+    background-color: #1b6d85;
+}
+.quote {
+    margin-top: 4rem;
+    background-color: #b9def0;
+    border-radius: 5px;
+}
+span.glyphicon-fire {
+    margin-top: 10px;
+    font-size: 3rem;
+}
