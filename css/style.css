@@ -1,12 +1,24 @@
 html, body {
     background-color: #1b6d85;
 }
+h1 {
+    font-weight: 800;
+}
 .quote {
     margin-top: 4rem;
-    background-color: #b9def0;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 span.glyphicon-fire {
-    margin-top: 10px;
+    margin: 1rem;
     font-size: 3rem;
+    color: #761c19;
+}
+p {
+    margin-left: 20rem;
+}
+.btn {
+    margin: 75px auto 15px;
+    font-weight: 600;
+    background-color: #b9def0;
 }
