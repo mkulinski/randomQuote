@@ -22,3 +22,11 @@ p {
     font-weight: 600;
     background-color: #b9def0;
 }
+ul {
+    margin: 75px auto 15px;
+    list-style: none;
+    cursor: hand;
+}
+a {
+    text-decoration: none;
+}

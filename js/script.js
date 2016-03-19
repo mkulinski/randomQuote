@@ -20,6 +20,21 @@ $(document).ready(function() {
     $("button").on("click", function() {
         var randomNumber = Math.floor(Math.random() * 5);
         $("p").html("- " +quotes.artists[randomNumber]);
-        $("h3").html( quotes.lyrics[randomNumber]);
+        $("h3").html(quotes.lyrics[randomNumber]);
     });
+
+    $('a.tweet').click(function(e){
+
+        //We tell our browser not to follow that link
+        e.preventDefault();
+
+        //We get the title of the link
+        var lyric  = $("h3").html();
+        var artist = $("p").html();
+
+        //We trigger a new window with the Twitter dialog, in the middle of the page
+        window.open('http://twitter.com/share?' + '&text=' + lyric + artist + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+
+    });
+
 });
